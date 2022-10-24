@@ -42,7 +42,7 @@ html{
     display: flex;
     flex-direction: column;
     background-color: rgba(0,0,0,0.5);
-    height: 840px;
+    height: 0px;
     justify-content: center;
     align-items: center;
     color: white;
@@ -73,18 +73,26 @@ html{
     text-align: center;
     margin: 40px 0px;
 }
+
+span{
+    transition: all 1.2s ease;
+}
+span.fade{
+    color: rgb(153, 169, 245);
+}
+
 .btn{
     padding: 10px 35px;
     background-color: transparent;
     border: 1px solid white;
-    color: white;
+    color: rgb(153, 169, 245);
     outline: none;
     transition: .5s ease;
 
 }
 .btn:hover{
     cursor: pointer;
-    background-color: white;
+    background-color: rgb(153, 169, 245);
     color: black;
     box-shadow: 0,0,5,white, 0,0,10px white, 0,0,15px white;
     font-weight: bold;
@@ -115,7 +123,75 @@ html{
     margin-bottom: 20px;
 }
 
-/* Portfolio Section */
+/* 
+.carousel {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.carousel > ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.slide {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: 200ms opacity ease-in-out;
+    transition-delay: 200ms;
+}
+
+.slide > img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.slide[data-active] {
+    opacity: 1;
+    z-index: 1;
+    transition-delay: 0ms;
+}
+
+.carousel-button {
+    position: absolute;
+    z-index: 2;
+    background: none;
+    border: none;
+    font-size: 4rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgba(255, 255, 255, .5);
+    cursor: pointer;
+    border-radius: .25rem;
+    padding: 0 .5rem;
+    background-color: rgba(0, 0, 0, .1);
+}
+
+.carousel-button:hover,
+.carousel-button:focus {
+    color: white;
+    background-color: rgba(0, 0, 0, .2);
+}
+
+.carousel-button:focus {
+    outline: 1px solid black;   
+}
+
+.carousel-button.prev {
+    left: 1rem;
+}
+
+.carousel-button.next {
+    right: 1rem;
+} */
+
+
+/* Portfolio Section*/
 #portfolio{
     display: flex;
     flex-direction: column;
@@ -134,12 +210,14 @@ html{
     width: 360px;
     height: 360px;
     margin: 10px;
-}
+
+} 
 /* Skills Section*/
 #skills{
     display: flex;
     flex-direction: column;
     padding: 20px;
+    
 }
 .row{
     display: flex;
